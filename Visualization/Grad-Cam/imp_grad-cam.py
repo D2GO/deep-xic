@@ -6,7 +6,6 @@ from keras.preprocessing import image
 from keras import models
 from keras import backend as K
 import matplotlib.pyplot as plt
-import cv2
 
 
 def resize(x):

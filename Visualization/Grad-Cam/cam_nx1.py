@@ -81,25 +81,23 @@ model.add(MaxPooling1D(                                       #8*512
     strides=2,
     padding='same')) 
 '''
-# Flatten层，把多维输入进行一维化，常用在卷积层到全连接层的过渡
+
 model.add(Flatten())                                           #4096
 
 model.add(Dense(units=1024))
 model.add(Activation('relu'))
 model.add(Dropout(0.5))
-#包含100个神经元的全连接层，激活函数为ReLu，dropout比例为0.5
+
 model.add(Dense(units=128))
 model.add(Activation('relu'))
 model.add(Dropout(0.5))
 
-# 包含10个神经元的输出层，激活函数为Softmax
 model.add(Dense(units=2))
 model.add(Activation('softmax'))
 
 # 输出模型的参数信息
 model.summary()
 
-#######################cconfiguration############
 # 配置模型的学习过程
 adam = optimizers.Adam(lr=0.0001)
 model.compile(loss='categorical_crossentropy',

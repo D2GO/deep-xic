@@ -16,4 +16,11 @@ You can find the main function to run the submodule.
 python main.py
 ``` 
 When you run the code, copy the data to the corresponding folder. 
-`Placeholder.txt` is a placeholder file, delete it before running code.
+`Placeholder.txt` is a placeholder file, delete it before running code. 
+# Dependencies
+sklearn 0.20.0  
+keras 2.2.2  
+tensorflow 1.11.0  
+python 3.5.2  
+jupyter 1.0.0  
+Ubuntu 16.04 LTS

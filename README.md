@@ -12,4 +12,6 @@ Script files for classification results visualization
 You can find the main function to run the submodule.
 ```
 python main.py
-```
+``` 
+When you run the code, copy the data to the corresponding folder. 
+`Placeholder.txt` is a placeholder file, delete it before running code.
